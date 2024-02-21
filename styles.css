@@ -1,0 +1,513 @@
+/* Reset CSS */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f0e9; 
+    color: #333;
+}
+
+/* Style pour le logo */
+.logo img {
+    width: 80px; 
+    height: auto; 
+    border-radius: 50%; 
+    vertical-align: middle; 
+}
+
+/* Style pour le logo */
+.logo {
+    display: inline-block; 
+    margin-right: 10px; 
+    margin-bottom: -15px; 
+}
+
+/* Style pour le texte Animalerie*/
+h1 {
+    display: inline-block;
+    vertical-align: middle; /* Alignement vertical avec le logo */
+    font-size: 24px; 
+    margin-left: 5px; 
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Header Styles */
+header {
+    background-image: url('./bannièreAnim.png'); 
+    background-size: cover; /* Redimensionner l'image pour couvrir tout le header */
+    background-position: center;
+    background-repeat: no-repeat; 
+    padding: 20px 0;
+}
+header h1 {
+    font-weight: bold;
+}
+
+
+
+nav {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    background-size: cover; 
+    background-position: center center; 
+    padding: 20px 0; 
+    width: 100%;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 10px; /* Espacement entre les éléments du menu */
+}
+
+/* Style pour les liens du menu */
+nav ul li a {
+    color: #5d493e; 
+    text-decoration: none;
+    padding: 5px 10px; 
+    border-radius: 5px; 
+    background-color: rgba(255, 255, 255, 0.5); /* Fond semi-transparent */
+    font-weight: bold; 
+}
+
+/* Style pour les liens du menu au survol */
+nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.8); 
+}
+/* Emplacement pour la bannière avec des animaux */
+.banner-header {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%; 
+    text-align: center;
+}
+
+.banner-header img {
+    max-width: 100%; 
+}
+
+/* Banner Styles */
+.banner {
+    background-image: linear-gradient(135deg, #e6d7c3, #f3f0e9); /* Dégradé de beige */
+    color: #333;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.banner h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.banner p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+
+.btn {
+    background-color: #d2b48c; 
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #deb887; 
+}
+
+/* Featured Section Styles */
+.featured {
+    padding: 50px 0;
+}
+
+
+
+/* Styles for Comments Section */
+.comments {
+    background-color: #f3f0e9;
+    padding: 50px 0;
+}
+
+.comment {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding: 20px;
+}
+.comments h2{
+    font-size: 24px;
+    font-weight: bold;
+    color: #333; 
+    text-align: center;
+    margin-bottom: 30px; 
+    text-transform: uppercase; 
+}
+
+.comments .container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 24px;
+    color: #5d493e;
+    margin-bottom: 30px;
+}
+
+.comment-block {
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.comment-block:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.comment-avatar:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+.comment-block:hover .comment-text {
+    color: #8b4513;
+    transition: color 0.3s ease;
+}
+
+.comment-block:hover .comment-author {
+    color: #8b4513;
+    transition: color 0.3s ease;
+}
+
+.comment-avatar {
+    width: 60px;
+    height: 60px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-right: 20px;
+    float: left;
+}
+
+.comment-avatar img {
+    width: 100%;
+}
+
+.comment-details {
+    overflow: hidden;
+}
+
+.comment-text {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.comment-author {
+    font-style: italic;
+    font-weight: bold;
+    color: #8b4513;
+    margin-top: 10px;
+}
+
+/* Hover effect */
+.comment-block:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.featured h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+section.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 50px 0;
+}
+
+/* Style pour chaque produit */
+.product {
+    display: inline-block;
+    margin: 0 20px 40px 20px;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: calc(50% - 40px);
+}
+
+/* Décaler le dernier élément de chaque ligne vers la droite */
+.product:nth-child(2n) {
+    margin-right: auto;
+}
+
+/* Style pour l'image du produit */
+.product img {
+    max-width: 80px;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+
+/* Animation de grossissement des images des produits au survol */
+.product img {
+    max-width: 100px;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease; /* Animation de transition */
+}
+
+.product img:hover {
+    transform: scale(1.2); /* Grossissement de 20% au survol */
+}
+
+/* Animation de grossissement du bouton "Ajouter au panier" au survol */
+.add-to-cart-button {
+    background-color: #d2b48c;
+    color: #fff;
+    padding: 12px 24px; /* Ajustement de la taille du bouton */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease; /* Animation de transition */
+}
+
+.add-to-cart-button:hover {
+    background-color: #deb887;
+    transform: scale(1.1); /* Grossissement de 10% au survol */
+}
+
+.product h3 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Style pour le prix du produit */
+.product .price {
+    font-weight: bold;
+    color: #b0885a; 
+    font-size: 14px;
+}
+
+button {
+    background-color: #d2b48c;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #deb887;
+}
+
+/* Cart Styles */
+.cart {
+    padding: 50px;
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+}
+
+.cart .container {
+    text-align: center;
+}
+
+#cart h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+    color: #333; 
+}
+
+#cart-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+#cart-total {
+    margin-top: 30px;
+    font-size: 18px;
+    color: #555; 
+}
+
+.cart-total p {
+    margin-bottom: 10px;
+}
+
+.cart-total {
+    font-weight: bold;
+    color: #333;
+}
+
+.cart-item {
+    background-color: #ffffff; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px; 
+    margin-bottom: 20px; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cart-item:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); 
+}
+
+#checkout-button {
+    background-color: #d2b48c;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+#checkout-button:hover {
+    background-color: #deb887;
+}
+
+
+
+/* Contact Styles */
+.contact {
+    padding: 50px 0;
+    background-color: #f8f8f8;
+}
+
+.contact .container {
+    text-align: center;
+}
+
+.contact h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+.contact p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button[type="submit"] {
+    background-color: #d2b48c;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #deb887;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #be9c7d; 
+    color: #4d4d4d; 
+    padding: 20px 0;
+    text-align: center;
+}
+
+@keyframes addToCartAnimation {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.button-click-animation {
+    animation: addToCartAnimation 0.5s ease;
+}
+
+@keyframes rotateAnimation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.rotate-on-add {
+    animation: rotateAnimation 0.5s linear;
+}

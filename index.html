@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="./logo-animalerie.png" alt="Logo de l'animalerie">
+            </div>
+            <h1><a href="index.html">Animalerie </a></h1>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="products.html">Produits</a></li>
+                    <li><a href="cart.html">Panier</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="banner">
+        <div class="container">
+            <h2>Bienvenue dans notre Animalerie </h2>
+            <p>Découvrez notre sélection exclusive de produits pour animaux : jeux, alimentation, articles de toilettage et bien plus encore.</p>
+
+            <a href="products.html" class="btn">Découvrir</a>
+        </div>
+    </section>
+
+    <section class="featured">
+        <div class="container">
+            <h2>Produits en vedette</h2>
+            <div class="product">
+                <img src="./collierChien.png" alt="Collier pour chien">
+                <h3>Collier pour chien</h3>
+                <p>Un collier élégant et confortable pour votre meilleur ami.</p>
+                <p class="price">15,99 €</p>
+                <button class="add-to-cart-button" onclick="addToCart( 'Collier pour chien', 15.99, this)">Ajouter au panier</button>
+            </div>
+
+            <div class="product">
+                <img src="./jouetChat.png" alt="Jouet pour chat">
+                <h3>Jouet pour chat</h3>
+                <p>Un jouet amusant pour divertir votre chat pendant des heures.</p>
+                <p class="price">8,99 €</p>
+                <button class="add-to-cart-button" onclick="addToCart('Jouet pour chat', 8.99, this)">Ajouter au panier</button>
+            </div>
+    
+    </section>
+
+    <section class="comments">
+        <div class="container">
+            <h2>Ce que nos clients disent</h2>
+            <div class="comment">
+                <div class="comment-avatar">
+                    <img src="./femme.jpg" alt="Avatar">
+                </div>
+                <div class="comment-content">
+                    <p class="comment-text">J'adore absolument ce magasin ! Ils ont une si grande sélection de produits et le personnel est toujours sympathique et serviable.</p>
+                    <p class="comment-author">- Émilie Dubois</p>
+                </div>
+            </div>
+            <div class="comment">
+                <div class="comment-avatar">
+                    <img src="./homme.jpg" alt="Avatar">
+                </div>
+                <div class="comment-content">
+                    <p class="comment-text">La qualité de leurs produits est incroyable ! Je suis client depuis des années et je n'ai jamais été déçu.</p>
+                    <p class="comment-author">- Michel Martin</p>
+                </div>
+            </div>
+            <div class="comment">
+                <div class="comment-avatar">
+                    <img src="./chat.jpg" alt="Avatar">
+                </div>
+                <div class="comment-content">
+                    <p class="comment-text">Ce magasin est une pépite cachée ! Je l'ai découvert il y a quelques mois et maintenant c'est mon endroit préféré pour tous mes besoins en matière d'animaux.</p>
+                    <p class="comment-author">- Sarah Lambert</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Animalerie </p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

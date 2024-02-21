@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produits</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1><a href="index.html">Animalerie </a></h1>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="products.html">Produits</a></li>
+                    <li><a href="cart.html">Panier</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="products">
+        <div class="container">
+            <div class="product">
+                <img src="./collierChien.png" alt="Collier pour chien">
+                <h3>Collier pour chien</h3>
+                <p>Un collier élégant et confortable pour votre meilleur ami.</p>
+                <p class="price">15,99 €</p>
+                <button class="add-to-cart-button" onclick="addToCart( 'Collier pour chien', 15.99, this)">Ajouter au panier</button>
+            </div>
+            
+            <div class="product">
+                <img src="./jouetChat.png" alt="Jouet pour chat">
+                <h3>Jouet pour chat</h3>
+                <p>Un jouet amusant pour divertir votre chat pendant des heures.</p>
+                <p class="price">8,99 €</p>
+                <button class="add-to-cart-button" onclick="addToCart('Jouet pour chat', 8.99, this)">Ajouter au panier</button>
+            </div>
+    
+            <div class="product">
+                <img src="./nourriturePoisson.png" alt="Nourriture pour poissons">
+                <h3>Nourriture pour poissons</h3>
+                <p>Des flocons nutritifs pour garder vos poissons en bonne santé.</p>
+                <p class="price">5,99 €</p>
+                <button class="add-to-cart-button" onclick="addToCart('Nourriture pour poissons', 5.99, this)">Ajouter au panier</button>
+            </div>
+    
+            <div class="product">
+                <img src="./croquetteChien.png" alt="Nourriture pour chiens">
+                <h3>Nourriture pour chiens</h3>
+                <p>Nourriture savoureuse et équilibrée pour chiens de toutes tailles.</p>
+                <p class="price">25,99 €</p>
+                <button class="add-to-cart-button" onclick="addToCart('Croquettes pour chien', 25.99, this)">Ajouter au panier</button>
+            </div>
+            
+            <div class="product">
+                <img src="./littiereChat.png" alt="Litière pour chat">
+                <h3>Litière pour chat</h3>
+                <p>Litière agglomérante pour une meilleure absorption des odeurs.</p>
+                <p class="price">19,99 €</p>
+                <button class="add-to-cart-button" onclick="addToCart('Litière pour chat', 19.99, this)">Ajouter au panier</button>
+            </div>
+            
+            <div class="product">
+                <img src="./jouetChien.png" alt="Jouet interactif pour chien">
+                <h3>Jouet interactif pour chien</h3>
+                <p>Jouet interactif pour stimuler l'intelligence de votre chien.</p>
+                <p class="price">12,99 €</p>
+                <button class="add-to-cart-button" onclick="addToCart('Jouet pour chien', 12.99, this)">Ajouter au panier</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Animalerie </p>
+        </div>
+    </footer>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panier</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1><a href="index.html">Animalerie </a></h1>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="products.html">Produits</a></li>
+                    <li><a href="cart.html">Panier</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="cart">
+        <div class="container">
+            <h2>Votre Panier</h2>
+            <div class="cart-items">
+                <!-- Les éléments du panier seront ajoutés ici par JavaScript -->
+            </div>
+            <div class="cart-total">
+                <div>Total du prix: <span id="total-price">0.00</span> €</div>
+                <!-- Bouton de commande -->
+
+                <button onclick="clearCart()">Vider le panier</button>
+                <button id="checkout-button">Passer la commande</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Animalerie </p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
